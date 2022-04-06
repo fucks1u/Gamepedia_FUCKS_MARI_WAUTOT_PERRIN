@@ -3,11 +3,14 @@
 namespace game\controller;
 
 use game\html\vueIndex;
-use game\html\vueSeance2;
+
 use game\models\Game;
 use game\models\Company;
 use game\models\Platform;
 use game\html\vueSeance1;
+use game\html\vueSeance2;
+use game\html\vueSeance3;
+use game\html\vueSeance4;
 use wishlist\controller\DBException;
 use \Psr\Http\Message\ResponseInterface as Response;
 
@@ -59,6 +62,22 @@ class Controller
         $v->getQuestion2($question2);
         $v->getQuestion3($question3);
 
+        return $rs;
+    }
+
+    public function getSeance3($rq,$rs,$args)
+    {
+        $v = new vueSeance3();
+        $v->getQuestion1();
+        $v->getQuestion2();
+        return $rs;
+    }
+
+    public function getSeance4($rq,$rs,$args)
+    {
+        $v = new vueSeance4();
+
+        $v->getQuestion1();
         return $rs;
     }
 

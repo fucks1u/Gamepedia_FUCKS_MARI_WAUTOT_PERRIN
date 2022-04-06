@@ -35,6 +35,18 @@ $app->get('/seance2', function (Request $request, Response $response, array $arg
     return $c->getSeance2($request,$response,$args);
 });
 
+$app->get('/seance3', function (Request $request, Response $response, array $args) {
+    $c = new Controller($this);
+    return $c->getSeance3($request,$response,$args);
+});
+
+
+$app->get('/seance4', function (Request $request, Response $response, array $args) {
+    $c = new Controller($this);
+    return $c->getSeance4($request,$response,$args);
+});
+
+
 
 
 

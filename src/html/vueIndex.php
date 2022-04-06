@@ -17,6 +17,7 @@ class vueIndex{
 <a href="seance1">Seance 1</a>
 <a href="seance2">Seance 2</a>
 <a href="seance3">Seance 3</a>
+<a href="seance4">Seance 4</a>
 </body>
 </html>
 END;
